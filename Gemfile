@@ -62,6 +62,7 @@ group :development do
 
   # Speed up commands on slow machines / big apps [https://github.com/rails/spring]
   # gem "spring"
+  gem "faker", "~> 3.2"
 end
 
 group :test do
@@ -70,3 +71,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "annotate", "~> 3.2"
+gem "devise", "~> 4.9"
