@@ -1,6 +1,6 @@
 <p style="color: green"><%= notice %></p>
   <%= render @article %>
-  <%= render 'comments/form' %>
+
 <div>
   <%= link_to "Edit this article", edit_article_path(@article) %> |
   <%= link_to "Back to articles", articles_path %>
@@ -9,4 +9,6 @@
   <%= button_to "#{Article::KindsSpanish[kind]}",
   new_user_reaction_path(article_id: @article.id, reaction_type: "article", kind: kind), method: :post %>
   <% end %>
+
+<%= render 'comments/form' %>
 </div>
