@@ -1,0 +1,8 @@
+<div>
+    <% @comments.each do |comment| %>
+        <p>
+            <%= image_tag(comment.user.photo) %>
+            <%= comment.content %>
+        </p>
+    <% end %>
+</div>
