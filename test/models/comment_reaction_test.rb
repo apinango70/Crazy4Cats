@@ -1,18 +1,16 @@
 # == Schema Information
 #
-# Table name: articles
+# Table name: comment_reactions
 #
 #  id          :bigint           not null, primary key
-#  title       :string
-#  description :string
-#  content     :text
-#  user_id     :bigint           not null
+#  comment_id  :bigint           not null
+#  reaction_id :bigint           not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #
 require "test_helper"
 
-class ArticleTest < ActiveSupport::TestCase
+class CommentReactionTest < ActiveSupport::TestCase
   # test "the truth" do
   #   assert true
   # end
