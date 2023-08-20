@@ -9,16 +9,16 @@ puts 'Creando registros'
 
 # seed.rb
 
-# 20.times do
-#   Article.create(
-#     title: Faker::Book.title,
-#     description: Faker::Lorem.sentence,
-#     content: Faker::Lorem.paragraphs.join("\n\n"),
-#     user_id: 1
-#   )
-# end
+20.times do
+  Article.create(
+    title: Faker::Book.title,
+    description: Faker::Lorem.sentence,
+    content: Faker::Lorem.paragraphs.join("\n\n"),
+    user_id: 1
+  )
+end
 
-# puts 'Registros creado en la bd'
+puts 'Registros creado en la bd'
 
 puts 'Creando comentarios'
 
